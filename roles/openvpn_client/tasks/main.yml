@@ -1,0 +1,14 @@
+---
+  - name: Install openVPN
+    apt: pkg=openvpn update_cache=yes
+
+  - name: Generate client config
+    template:
+      src: "client.conf.j2"
+      dest: "/etc/openvpn/client.conf"
+
+  - name: Run openvpn as service
+    service:
+      name: openvpn
+      enabled: yes
+      state: started
