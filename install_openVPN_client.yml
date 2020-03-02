@@ -1,0 +1,7 @@
+---
+- name: Install and configure openVPN client
+  hosts: test_group
+  become: true
+
+  roles:
+  - role: openvpn_client
