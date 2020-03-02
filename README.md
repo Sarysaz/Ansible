@@ -13,10 +13,10 @@ Keys for open VPN client (ca.crt, tls-auth etc) must be specified in templates/c
 
 Role Variables:         Default:        Description
 -------------------------------------------------------------------------------------
-openvpn_server_ip       8.8.8.8         VPN server ip address
-openvpn_port            2195            VPN server port
-openvpn_proto           udp             The protocol which you want to use (tcp/udp)
-openvpn_reneg_sec       259200          Renegotiate data channel key after X seconds. When using dual-factor authent$
+ - openvpn_server_ip       8.8.8.8         VPN server ip address
+ - openvpn_port            2195            VPN server port
+ - openvpn_proto           udp             The protocol which you want to use (tcp/udp)
+ - openvpn_reneg_sec       259200          Renegotiate data channel key after X seconds. When using dual-factor authent$
 
 Dependencies
 ------------
