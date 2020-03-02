@@ -1,0 +1,10 @@
+[your_group_name]
+your_server_name   ansible_host=openvpn_client_ip_address
+# For example:
+# my_server        ansible_host=177.177.199.199
+
+
+[test_group:vars]
+ansible_user=username
+ansible_ssh_private_key_file=/home/sarysaz/.ssh/id_rsa
+ansible_sudo_pass=Very$tr0ngSud0Pa$sword
