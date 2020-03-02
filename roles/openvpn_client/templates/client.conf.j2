@@ -1,0 +1,56 @@
+client
+nobind
+dev tun
+key-direction 1
+remote-cert-tls server
+
+remote {{openvpn_server_ip}} {{openvpn_port}} {{openvpn_proto}}
+
+<key>
+-----BEGIN PRIVATE KEY-----
+cKQ/OEHAanvgmSsZrcENOg3Omb7koQJrdfcUaYctgois/G8bMmH7ewiVDK4C3SNZ
+EJn8lr7A5OHTLaswn53HAfEcsTLjcSqf0HEZkvP1JJW3Gi0uzNihdH6giL3q/0U/
+quqtgLnvAgMBAAECggEBAI82RbAKMTsBuWlmSM0I7iqblvRKWM2CBImr8xVVst7h
+cKQ/OEHAanvgmSsZrcENOg3Omb7koQJrdfcUaYctgois/G8bMmH7ewiVDK4C3SNZ
+EJn8lr7A5OHTLaswn53HAfEcsTLjcSqf0HEZkvP1JJW3Gi0uzNihdH6giL3q/0U/
+quqtgLnvAgMBAAECggEBAI82RbAKMTsBuWlmSM0I7iqblvRKWM2CBImr8xVVst7h
+cKQ/OEHAanvgmSsZrcENOg3Omb7koQJrdfcUaYctgois/G8bMmH7ewiVDK4C3SNZ
+EJn8lr7A5OHTLaswn53HAfEcsTLjcSqf0HEZkvP1JJW3Gi0uzNihdH6giL3q/0U/
+quqtgLnvAgMBAAECggEBAI82RbAKMTsBuWlmSM0I7iqblvRKWM2CBImr8xVVst7h
+-----END PRIVATE KEY-----
+</key>
+<cert>
+-----BEGIN CERTIFICATE-----
+Yft7CJUMrgLdI1kQmfyWvsDk4dMtqzCfnccB8RyxMuNxKp/QcRmS8/UklbcaLS7M
+2KF0fqCIver/RT+q6q2Aue8CAwEAAaOBlzCBlDAJBgNVHRMEAjAAMB0GA1UdDgQW
+Yft7CJUMrgLdI1kQmfyWvsDk4dMtqzCfnccB8RyxMuNxKp/QcRmS8/UklbcaLS7M
+2KF0fqCIver/RT+q6q2Aue8CAwEAAaOBlzCBlDAJBgNVHRMEAjAAMB0GA1UdDgQW
+Yft7CJUMrgLdI1kQmfyWvsDk4dMtqzCfnccB8RyxMuNxKp/QcRmS8/UklbcaLS7M
+2KF0fqCIver/RT+q6q2Aue8CAwEAAaOBlzCBlDAJBgNVHRMEAjAAMB0GA1UdDgQW
+-----END CERTIFICATE-----
+</cert>
+<ca>
+-----BEGIN CERTIFICATE-----
+M7EYYP2l9RY1seWcJ6L/8aLJVRD/Z8rIlcMRgCAdMwNmiKSLLpNHv8yjhPhSt0si
+To4B/rpPKRmxczS1ZuKaU+V4i2ctx8dhrd/4JzfnJqkGCYEjPS3I4vl+8tMjoQkF
+M7EYYP2l9RY1seWcJ6L/8aLJVRD/Z8rIlcMRgCAdMwNmiKSLLpNHv8yjhPhSt0si
+To4B/rpPKRmxczS1ZuKaU+V4i2ctx8dhrd/4JzfnJqkGCYEjPS3I4vl+8tMjoQkF
+M7EYYP2l9RY1seWcJ6L/8aLJVRD/Z8rIlcMRgCAdMwNmiKSLLpNHv8yjhPhSt0si
+To4B/rpPKRmxczS1ZuKaU+V4i2ctx8dhrd/4JzfnJqkGCYEjPS3I4vl+8tMjoQkF
+-----END CERTIFICATE-----	
+</ca>
+<tls-auth>
+#
+# 2048 bit OpenVPN static key
+#
+-----BEGIN OpenVPN Static key V1-----
+e860d99583160e9cf96dbe59dbbd5db8
+e860d99583160e9cf96dbe59dbbd5db8
+e860d99583160e9cf96dbe59dbbd5db8
+e860d99583160e9cf96dbe59dbbd5db8
+-----END OpenVPN Static key V1-----
+</tls-auth>
+
+auth-nocache
+comp-lzo
+reneg-sec {{openvpn_reneg_sec}}
